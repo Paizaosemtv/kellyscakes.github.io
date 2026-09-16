@@ -2911,7 +2911,7 @@ table.adm input {
       </div>
       <div class="ftr-bottom">
         <span>© <span id="yr"></span> Kelly's Cakes &amp; Salgados</span>
-        <span><button class="lnk edit" id="admOpen" style="color:var(--mauve-soft)">Área da Kelly</button></span>
+        <span><button class="lnk edit" id="admOpen" style="color:var(--mauve-soft)">Painel Administrativo</button></span>
       </div>
     </div>
   </footer>
@@ -3004,7 +3004,7 @@ table.adm input {
     <div class="grab"></div>
     <div class="m-head">
       <div style="flex:1">
-        <h3 id="admTitle">Área da Kelly</h3>
+        <h3 id="admTitle">Painel Administrativo</h3>
         <div class="sub">Agenda, preços e fotos do site</div>
       </div>
       <button class="m-close" data-close aria-label="Fechar">
@@ -3198,11 +3198,13 @@ const CONFIG = {
     fotoSobre: "images/bolo-cesta-rosas.jpg",
     heroFotos: [
       "images/bolo-coracao-vintage.jpg",
+      "images/brigadeiro-tradicional.jpg",
       "images/bolo-acetato-morangos-brigadeiro.jpg",
       "images/caixa-cento-coxinhas.jpg",
+      "images/beijinho-coco.jpg",
       "images/bolo-dois-amores-drip.jpg",
+      "images/brigadeiro-churros.jpg",
       "images/bolo-cesta-rosas.jpg",
-      "images/docinhos-beijinho-brigadeiro.jpg",
       "images/bolo-trufado-maracuja.jpg",
       "images/caixa-cento-empadas.jpg",
       "images/bolo-pokemon.jpg",
@@ -3291,13 +3293,10 @@ const CONFIG = {
   docinhosPreco: { cento: 5000, unidade: 100 },
   docinhosQtds: [100, 200, 300, 400, 500],
   docinhos: [
-    { id: "d1", nome: "Brigadeiro",                desc: "O clássico brasileiro, sabor intenso",      art: "brig-choc",  foto: "images/docinhos-beijinho-brigadeiro.jpg" },
-    { id: "d2", nome: "Beijinho",                  desc: "Coco e cravo, do jeito certo",              art: "brig-white", foto: "images/docinhos-beijinho-brigadeiro.jpg" },
-    { id: "d3", nome: "Cajuzinho",                 desc: "Amendoim e açúcar cristal",                 art: "caju",       foto: "images/docinhos-beijinho-brigadeiro.jpg" },
-    { id: "d4", nome: "Bicho de pé",               desc: "Rosinha, com sabor de morango",             art: "bicho",      foto: "images/docinhos-beijinho-brigadeiro.jpg" },
-    { id: "d5", nome: "Brigadeiro de churros",     desc: "Doce de leite e canela",                    art: "churros",    foto: "images/docinhos-beijinho-brigadeiro.jpg" },
-    { id: "d6", nome: "Brigadeiro de leite ninho",  desc: "Cremoso, coberto de leite em pó",           art: "brig-white", foto: "images/docinhos-beijinho-brigadeiro.jpg" },
-    { id: "d7", nome: "Casadinho",                 desc: "Brigadeiro e beijinho juntinhos",           art: "casadinho",  foto: "images/docinhos-beijinho-brigadeiro.jpg" }
+    { id: "d1", nome: "Brigadeiro",                desc: "O clássico brasileiro, sabor intenso",      art: "brig-choc",  foto: "images/brigadeiro-tradicional.jpg" },
+    { id: "d2", nome: "Beijinho",                  desc: "Coco e cravo, do jeito certo",              art: "brig-white", foto: "images/beijinho-coco.jpg" },
+    { id: "d5", nome: "Brigadeiro de churros",     desc: "Doce de leite e canela",                    art: "churros",    foto: "images/brigadeiro-churros.jpg" },
+    { id: "d6", nome: "Brigadeiro de leite ninho",  desc: "Cremoso, coberto de leite em pó",           art: "brig-white", foto: "images/beijinho-coco.jpg" }
   ],
 
   /* ---------- 8. AGENDA E ENTREGA ---------- */
@@ -3344,14 +3343,16 @@ const CONFIG = {
     { cat: "salgados", titulo: "Kibes, Bolinhas de Queijo e Empadas",     art: "kibe",     foto: "images/caixa-kibe-bolinha-empada.jpg" },
     { cat: "salgados", titulo: "Esfihas Assadas & Enroladinhos",          art: "esfiha",   foto: "images/caixa-esfiha-enroladinho.jpg" },
     { cat: "salgados", titulo: "Coxinhas e Risoles Fritos",               art: "coxinha",  foto: "images/salgados-coxinha-risole.jpg" },
-    { cat: "docinhos", titulo: "Caixas de Beijinhos & Brigadeiros",       art: "brig-choc", foto: "images/docinhos-beijinho-brigadeiro.jpg" },
+    { cat: "docinhos", titulo: "Cento de Brigadeiros Tradicionais",       art: "brig-choc", foto: "images/brigadeiro-tradicional.jpg" },
+    { cat: "docinhos", titulo: "Cento de Beijinhos Tradicionais de Coco", art: "brig-white", foto: "images/beijinho-coco.jpg" },
+    { cat: "docinhos", titulo: "Cento de Brigadeiros Gourmet de Churros", art: "churros", foto: "images/brigadeiro-churros.jpg" },
     { cat: "docinhos", titulo: "Cupcakes de Chocolate com Chantilly Azul", art: "brig-white", foto: "images/cupcakes-azul.jpg" },
     { cat: "docinhos", titulo: "Cupcakes Florais com Rosas Douradas",     art: "brig-white", foto: "images/cupcakes-flores.jpg" },
     { cat: "festas",   titulo: "Mesa de Aniversário Especial",            art: "mesa",     foto: "images/bolo-coracao-vintage.jpg" },
     { cat: "festas",   titulo: "Festa Temática Infantil Pokémon",         art: "round-l",  foto: "images/bolo-pokemon.jpg" },
     { cat: "festas",   titulo: "Festa Castelo Princesa",                  art: "round-xl", foto: "images/bolo-castelo.jpg" },
     { cat: "festas",   titulo: "Caixa Especial de Salgados para Festas",  art: "coxinha",  foto: "images/caixa-cento-coxinhas.jpg" },
-    { cat: "festas",   titulo: "Docinhos e Beijinhos Tradicionais",       art: "brig-choc", foto: "images/docinhos-beijinho-brigadeiro.jpg" }
+    { cat: "festas",   titulo: "Docinhos e Brigadeiros Gourmet para Festas", art: "brig-choc", foto: "images/brigadeiro-tradicional.jpg" }
   ],
   galeriaCategorias: [
     { id: "todos",    nome: "Tudo" },
@@ -4444,7 +4445,7 @@ function abrirAdmin() {
       <div class="errmsg" id="admErr" hidden>Senha incorreta.</div>
       <button class="btn btn-primary btn-block" style="margin-top:12px" id="admEnter">Entrar</button>
       <p style="font-size:.8rem;color:var(--mauve-soft);margin-top:14px;text-align:center">
-        Esta área é só para a Kelly. Aqui dá para bloquear datas, marcar dias lotados, mudar preços e trocar as fotos.</p>
+        Requer acesso</p>
     </div>`;
   abrir("admModal");
 }
